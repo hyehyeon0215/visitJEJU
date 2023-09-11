@@ -1,0 +1,35 @@
+#visual {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+
+    .frame {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        >li {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            >img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .visual-bar {
+        width: 60%;
+        height: 100px;
+        position: absolute;
+        display: flex;
+        left: 5%;
+        bottom: -50px;
+        background-color: #f7f7f7;
+    }
+}

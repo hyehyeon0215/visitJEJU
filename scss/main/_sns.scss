@@ -1,0 +1,18 @@
+#sns {
+    width: 100%;
+    padding: 0 0 150px;
+
+    .sns-inner {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+
+        .sns-youtube {
+            flex: 1.5;
+        }
+
+        .sns-instagram {
+            flex: 1;
+        }
+    }
+}

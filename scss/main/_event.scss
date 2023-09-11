@@ -1,0 +1,59 @@
+#event {
+    width: 100%;
+    padding: 150px 0 100px;
+
+    .event-inner {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+
+        .event-txt {
+            width: 100%;
+            height: 80px;
+            padding: 0 5%;
+        }
+
+        .event-slide {
+            width: 90%;
+            height: 400px;
+            display: flex;
+            overflow: hidden;
+            margin: 0 auto;
+
+            >li {
+                width: 25%;
+                height: 100%;
+                padding: 50px 10px;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #f7f7f7;
+                    border-radius: 20px;
+                    overflow: hidden;
+
+                    .event-img {
+                        width: 100%;
+                        height: 70%;
+                        overflow: hidden;
+
+                        >img {
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+        .event-btns {
+            position: absolute;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 80px;
+        }
+    }
+}
