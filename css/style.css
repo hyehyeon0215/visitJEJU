@@ -12,12 +12,30 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "Dokrip";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Dokrip.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ROEHOE-CHAN";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/ROEHOE-CHAN.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kimjungchul";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulScript-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 header {
   width: 100%;
   height: 70px;
   position: fixed;
-  background-color: rgba(247, 247, 247, 0.7);
-  z-index: 2;
+  background-color: #f7f7f7;
+  z-index: 3;
 }
 header .header-inner {
   width: 90%;
@@ -74,22 +92,97 @@ header .header-inner .header-icon {
   width: 100%;
   height: 80vh;
 }
-#visual .frame {
+#visual .slide-frame {
   position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+#visual .slide-frame > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  flex-shrink: 0;
+  transition: left 0.5s;
+}
+#visual .slide-frame > li > img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-#visual .frame > li {
+#visual .slide-frame > li .visual-txt {
+  position: absolute;
+  z-index: 2;
+  left: 5%;
+  bottom: 80px;
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+#visual .slide-frame > li .visual-txt h2 {
+  font: 72px/1 "Kimjungchul";
+  color: #fff;
+}
+#visual .slide-frame > li .visual-txt p {
+  font: 24px/1 "Kimjungchul";
+  color: #fff;
+}
+#visual .slide-frame > li::after {
+  content: "";
+  display: block;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
-#visual .frame > li > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+#visual .slide-btns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+#visual .slide-btns li i {
+  font-size: 80px;
+  color: #fff;
+  transition: 0.5s;
+}
+#visual .slide-btns li i:hover {
+  color: #ef6d00;
+}
+#visual .slide-pagination {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+}
+#visual .slide-pagination > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f7f7f7;
+}
+#visual .slide-pagination > li > a {
+  font: bold 16px/1 "arial";
+  color: #333;
+}
+#visual .slide-pagination > li.active {
+  background-color: #ef6d00;
+}
+#visual .slide-pagination > li.active > a {
+  color: #fff;
 }
 #visual .visual-bar {
   width: 60%;
@@ -99,6 +192,7 @@ header .header-inner .header-icon {
   left: 5%;
   bottom: -50px;
   background-color: #f7f7f7;
+  z-index: 2;
 }
 
 #event {
@@ -109,11 +203,11 @@ header .header-inner .header-icon {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  background-color: aqua;
 }
 #event .event-inner .event-txt {
   width: 100%;
   height: 80px;
-  padding: 0 5%;
 }
 #event .event-inner .event-slide {
   width: 90%;
@@ -155,18 +249,62 @@ header .header-inner .header-icon {
 
 #sns {
   width: 100%;
-  padding: 0 0 150px;
+  padding: 0 0 100px;
 }
 #sns .sns-inner {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  gap: 50px;
 }
 #sns .sns-inner .sns-youtube {
-  flex: 1.5;
+  flex: 2;
+  background-color: aqua;
 }
 #sns .sns-inner .sns-instagram {
   flex: 1;
+  background-color: aqua;
+}
+#sns .sns-inner > div ul {
+  width: 100%;
+  height: 250px;
+}
+#sns .sns-inner > div a {
+  display: block;
+  text-align: right;
+}
+
+#QnA {
+  width: 100%;
+  padding: 0 0 100px;
+}
+#QnA .QnA-inner {
+  width: 80%;
+  margin: 0 auto;
+  background-color: aqua;
+}
+#QnA .QnA-inner .QnA-txt {
+  width: 100%;
+  height: 80px;
+}
+#QnA .QnA-inner .QnA-list {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+#QnA .QnA-inner .QnA-list ul > li {
+  width: 100%;
+  padding: 0 20px;
+}
+#QnA .QnA-inner .QnA-list ul > li > a {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+#QnA .QnA-inner > a {
+  display: block;
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

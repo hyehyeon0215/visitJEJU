@@ -1,0 +1,40 @@
+#QnA {
+    width: 100%;
+    padding: 0 0 100px;
+
+    .QnA-inner {
+        width: 80%;
+        margin: 0 auto;
+        background-color: aqua;
+
+        .QnA-txt {
+            width: 100%;
+            height: 80px;
+        }
+
+        .QnA-list {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+
+            ul {
+                >li {
+                    width: 100%;
+                    padding: 0 20px;
+    
+                    >a {
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+        >a {
+            display: block;
+            text-align: right;
+        }
+    }
+
+}

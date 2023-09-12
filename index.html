@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>visitJEJU</title>
-    <script src="./script/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="./script/main.js"></script>
     <script src="https://kit.fontawesome.com/612f062b7d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -74,10 +74,46 @@
         </div>
     </header>
     <section id="visual">
-        <ul class="frame">
-            <li><img src="./img/main/visual/성산일출봉.jpg" alt="메인 비주얼 성산일출봉 사진"></li>
-            <li><img src="./img/main/visual/천지연폭포.jpg" alt="메인 비주얼 천지연 폭포 사진"></li>
-            <li><img src="./img/main/visual/주상절리.jpg" alt="메인 비주얼 주상절리 사진"></li>
+        <div class="visual-bg"></div>
+        <ul class="slide-frame">
+            <li class="slide-item">
+                <img src="./img/main/visual/성산일출봉.jpg" alt="메인 비주얼 성산일출봉 사진">
+                <div class="visual-txt">
+                    <h2>성산일출봉</h2>
+                    <p>제주특별자치도 서귀포시 성산읍 일출로 284-12</p>
+                </div>
+            </li>
+            <li class="slide-item">
+                <img src="./img/main/visual/천지연폭포.jpg" alt="메인 비주얼 천지연 폭포 사진">
+                <div class="visual-txt">
+                    <h2>천지연 폭포</h2>
+                    <p>제주특별자치도 서귀포시 남성중로 2-15</p>
+                </div>
+            </li>
+            <li class="slide-item">
+                <img src="./img/main/visual/주상절리.jpg" alt="메인 비주얼 주상절리 사진">
+                <div class="visual-txt">
+                    <h2>주상절리</h2>
+                    <p>제주특별자치도 서귀포시 이어도로 36-30</p>
+                </div>
+            </li>
+            <li class="slide-item">
+                <img src="./img/main/visual/섭지코지.jpg" alt="메인 비주얼 섭지코지 사진">
+                <div class="visual-txt">
+                    <h2>섭지코지</h2>
+                    <p>제주 서귀포시 성산읍 고성리</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="slide-btns">
+            <li class="slide-prev"><a href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+            <li class="slide-next"><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+        <ul class="slide-pagination">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
         </ul>
         <ul class="visual-bar">
             <li><input type="text" name="" id=""></li>
@@ -209,14 +245,66 @@
             </div>
             <div class="sns-instagram">
                 <h2>@visitjeju.kr</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
                 <a href="https://www.instagram.com/visitjeju.kr/">비짓제주 공식 Instagram 바로가기</a>
             </div>
         </div>
     </section>
     <section id="QnA">
-        <h2>제주관광 지식iN</h2>
-        <h3>제주 여행에 관해서라면 어떤 것이라도 물어보세요!<br>
-        비짓제주 상주 전문가를 비롯해 제주를 잘 아는 사람이라면 누구에게라도 답변 받을 수 있습니다.</h3>
+        <div class="QnA-inner">
+            <div class="QnA-txt">
+                <h2>제주관광 지식iN</h2>
+                <h3>제주 여행에 관해서라면 어떤 것이라도 물어보세요!<br>
+                비짓제주 상주 전문가를 비롯해 제주를 잘 아는 사람이라면 누구에게라도 답변 받을 수 있습니다.</h3>
+            </div>
+            <div class="QnA-list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestiae!</p>
+                            <span>Lorem, ipsum.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestiae!</p>
+                            <span>Lorem, ipsum.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestiae!</p>
+                            <span>Lorem, ipsum.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestiae!</p>
+                            <span>Lorem, ipsum.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestiae!</p>
+                            <span>Lorem, ipsum.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="">질문하기</a>
+        </div>
     </section>
+    <section id="recommend">
+    </section>
+    <footer>
+        
+    </footer>
 </body>
 </html>
