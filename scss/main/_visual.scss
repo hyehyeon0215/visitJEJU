@@ -62,21 +62,55 @@
 
     .slide-btns {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         display: flex;
         justify-content: space-between;
-        width: 95%;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        padding: 0 20px;
         
         li {
-            i {
-                font-size: 80px;
-                color: #fff;
-                transition: .5s;
+            width: 80px;
+            height: 80px;
 
-                &:hover {
-                    color: $mainColor;
+            >a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                >img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: .2s;
+
+                    &:nth-of-type(2) {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+
+            &:hover {
+                >a {
+                    >img {
+
+                        &:nth-of-type(1) {
+                            visibility: hidden;
+                        }
+
+                        &:nth-of-type(2) {
+                            opacity: 1;
+                            visibility:visible;
+                        }
+                    }
                 }
             }
         }
