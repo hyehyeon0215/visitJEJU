@@ -418,29 +418,103 @@ header .header-inner .header-icon > li > .language.on {
 
 #sns {
   width: 100%;
-  padding: 0 0 100px;
+  padding: 50px 0 100px;
 }
 #sns .sns-inner {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
-  gap: 50px;
+  overflow: hidden;
 }
-#sns .sns-inner .sns-youtube {
-  flex: 2;
-  background-color: aqua;
+#sns .sns-inner > div > h2 {
+  height: 40px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
-#sns .sns-inner .sns-instagram {
-  flex: 1;
-  background-color: aqua;
+#sns .sns-inner > div > h2::before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-bottom: 3px;
+  margin-right: 10px;
 }
-#sns .sns-inner > div ul {
+#sns .sns-inner > div > ul {
   width: 100%;
-  height: 250px;
+  height: 230px;
 }
-#sns .sns-inner > div a {
+#sns .sns-inner > div > a {
   display: block;
+  width: 100%;
+  height: 20px;
   text-align: right;
+  color: #888;
+  font-weight: normal;
+}
+#sns .sns-inner > div.sns-youtube {
+  width: 70%;
+  padding-right: 30px;
+}
+#sns .sns-inner > div.sns-youtube > h2::before {
+  background: url(../../img/logo/yotube.svg) no-repeat center/cover;
+}
+#sns .sns-inner > div.sns-youtube .youtube-list {
+  display: flex;
+  gap: 20px;
+}
+#sns .sns-inner > div.sns-youtube .youtube-list > li {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+}
+#sns .sns-inner > div.sns-youtube .youtube-list > li > a {
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+#sns .sns-inner > div.sns-youtube .youtube-list > li > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#sns .sns-inner > div.sns-youtube .youtube-list > li > p {
+  width: 100%;
+  height: 20px;
+  font-weight: 16px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#sns .sns-inner > div.sns-instagram {
+  width: 30%;
+}
+#sns .sns-inner > div.sns-instagram > h2::before {
+  background: url(../../img/logo/insta.svg) no-repeat center/cover;
+}
+#sns .sns-inner > div.sns-instagram .insta-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#sns .sns-inner > div.sns-instagram .insta-list > li {
+  width: 33.3333333333%;
+  height: 110px;
+  padding: 0 10px 10px;
+}
+#sns .sns-inner > div.sns-instagram .insta-list > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#sns .sns-inner > div.sns-instagram .insta-list > li > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #QnA {

@@ -130,3 +130,36 @@ slideBtns.addEventListener("mouseout", () => {
       nextMove();
     }, 5000);
 });
+
+
+
+//youtube api
+
+//list = PLT9LozkkUQQv1GE501OHIWiBoUMpgN67I
+//key = AIzaSyCH8aar9g3uEDi6wazPhlWbgIFyBf44UH0
+
+let key = "AIzaSyCH8aar9g3uEDi6wazPhlWbgIFyBf44UH0";
+let list = "PLT9LozkkUQQv1GE501OHIWiBoUMpgN67I";
+
+let youtubeList = document.querySelector(".youtube-list");
+const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${list}`;
+
+fetch(url)
+    .then((data) => {
+        return data.json();
+    })
+    .then((json) => {
+        let items = json.items;
+        let result = "";
+        items.map((el) => {
+            result += `
+              <li>
+                <a href= "https://www.youtube.com/watch?v=${el.snippet.resourceId.videoId}" target="_blank">
+                  <img src="${el.snippet.thumbnails.medium.url}">
+                </a>
+                <p>${el.snippet.title}</p>
+              </li>
+            `;
+        });
+      youtubeList.innerHTML = result;
+});
