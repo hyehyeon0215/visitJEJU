@@ -242,7 +242,7 @@ header .header-inner .header-icon > li > .language.on {
   content: "";
   width: 30px;
   height: 30px;
-  background: url(../../img/icon/map.svg) no-repeat center/cover;
+  background: url(../img/icon/map.svg) no-repeat center/cover;
   margin-bottom: 3px;
   margin-right: 10px;
 }
@@ -395,7 +395,7 @@ header .header-inner .header-icon > li > .language.on {
   height: 30px;
   margin-bottom: 3px;
   margin-right: 10px;
-  background: url(../../img/icon/qna.svg) no-repeat center/cover;
+  background: url(../img/icon/qna.svg) no-repeat center/cover;
 }
 #event .event-inner .event-slide {
   width: 90%;
@@ -566,7 +566,7 @@ header .header-inner .header-icon > li > .language.on {
   height: 30px;
   margin-bottom: 3px;
   margin-right: 10px;
-  background: url(../../img/icon/qna.svg) no-repeat center/cover;
+  background: url(../img/icon/qna.svg) no-repeat center/cover;
 }
 #QnA .QnA-inner .QnA-txt > h3 {
   font-size: 16px;
