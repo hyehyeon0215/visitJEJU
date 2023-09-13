@@ -147,8 +147,9 @@ header {
                     font-size: 16px;
                     color: #333;
 
-                    i {
-                        color: $mainColor;
+                    >i {
+                        font-size: 16px;
+                        color: #333;
                     }
                 }
 
@@ -159,7 +160,7 @@ header {
                     top: 97px;
                     left: 50%;
                     transform: translate(-50%);
-                    width: 80px;
+                    width: 100px;
                     border: 3px solid $mainColor;
                     padding: 10px 0;
                     background-color: #fff;
@@ -191,6 +192,7 @@ header {
                             justify-content: center;
                             align-items: center;
                             color: #333;
+                            font-size: 16px;
 
                             &::after {
                                 display: block;
@@ -211,6 +213,11 @@ header {
                                 }
                             }
                         }
+                    }
+
+                    &.on {
+                        visibility: visible;
+                        opacity: 1;
                     }
                 }
             }

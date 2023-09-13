@@ -18,14 +18,11 @@ header_gnb.forEach((el)=>{
     })
 })
 
-languageIcon.addEventListener(("mouseover"), (e) => {
+languageIcon.addEventListener(("click"), (e) => {
     e.preventDefault();
-    languageList.style.visibility = "visible";
-    languageList.style.opacity = 1;
-})
-
-languageIcon.addEventListener(("mouseleave"), (e) => {
-    e.preventDefault();
-    languageList.style.visibility = "hidden";
-    languageList.style.opacity = 0;
+    if (languageList.classList.contains('on')) {
+        languageList.classList.remove('on');
+    } else {
+        languageList.classList.add('on');
+    }
 })
