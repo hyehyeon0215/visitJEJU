@@ -376,13 +376,12 @@ header .header-inner .header-icon > li > .language.on {
 }
 #event .event-inner .event-txt {
   width: 100%;
-  height: 80px;
 }
 #event .event-inner .event-txt > h2 {
   height: 40px;
   font-size: 30px;
   font-weight: normal;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -395,11 +394,11 @@ header .header-inner .header-icon > li > .language.on {
   height: 30px;
   margin-bottom: 3px;
   margin-right: 10px;
-  background: url(../img/icon/qna.svg) no-repeat center/cover;
+  background: url("../img/icon/map.svg") no-repeat center/cover;
 }
 #event .event-inner .event-slide {
-  width: 90%;
-  height: 400px;
+  width: 100%;
+  height: 300px;
   display: flex;
   overflow: hidden;
   margin: 0 auto;
@@ -407,7 +406,7 @@ header .header-inner .header-icon > li > .language.on {
 #event .event-inner .event-slide > li {
   width: 25%;
   height: 100%;
-  padding: 50px 10px;
+  padding: 0px 10px;
 }
 #event .event-inner .event-slide > li a {
   display: block;
@@ -427,12 +426,14 @@ header .header-inner .header-icon > li > .language.on {
 }
 #event .event-inner .event-btns {
   position: absolute;
-  width: 100%;
+  width: 110%;
   height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #sns {
@@ -479,7 +480,7 @@ header .header-inner .header-icon > li > .language.on {
   padding-right: 30px;
 }
 #sns .sns-inner > div.sns-youtube > h2::before {
-  background: url(../../img/logo/yotube.svg) no-repeat center/cover;
+  background: url(../img/logo/yotube.svg) no-repeat center/cover;
 }
 #sns .sns-inner > div.sns-youtube .youtube-list {
   display: flex;
@@ -514,7 +515,7 @@ header .header-inner .header-icon > li > .language.on {
   width: 30%;
 }
 #sns .sns-inner > div.sns-instagram > h2::before {
-  background: url(../../img/logo/insta.svg) no-repeat center/cover;
+  background: url(../img/logo/insta.svg) no-repeat center/cover;
 }
 #sns .sns-inner > div.sns-instagram .insta-list {
   display: flex;
@@ -540,7 +541,7 @@ header .header-inner .header-icon > li > .language.on {
   width: 100%;
   margin-bottom: 100px;
   padding: 50px 0;
-  background-color: #ef6d00;
+  background-color: rgba(239, 109, 0, 0.6);
 }
 #QnA .QnA-inner {
   width: 70%;
@@ -575,17 +576,31 @@ header .header-inner .header-icon > li > .language.on {
   color: #f7f7f7;
 }
 #QnA .QnA-inner .QnA-list {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 50px 0;
+  display: flex;
+  gap: 30px;
 }
-#QnA .QnA-inner .QnA-list ul > li {
-  width: 100%;
-  padding: 0 20px;
+#QnA .QnA-inner .QnA-list > div {
+  flex: 1;
 }
-#QnA .QnA-inner .QnA-list ul > li > a {
+#QnA .QnA-inner .QnA-list > div > h2 {
   width: 100%;
   height: 40px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+#QnA .QnA-inner .QnA-list > div > ul {
+  width: 100%;
+}
+#QnA .QnA-inner .QnA-list > div > ul > li {
   display: flex;
   justify-content: space-between;
 }
