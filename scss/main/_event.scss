@@ -1,15 +1,36 @@
 #event {
     width: 100%;
-    padding: 150px 0 100px;
+    padding: 0px 0 100px;
 
     .event-inner {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         position: relative;
 
         .event-txt {
             width: 100%;
             height: 80px;
+
+            >h2 {
+                height: 40px;
+                font-size: 30px;
+                font-weight: normal;
+                margin-bottom: 10px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                color: #333;
+    
+                &::before {
+                    display: inline-block;
+                    content: '';
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 3px;
+                    margin-right: 10px;
+                    background: url(../../img/icon/qna.svg) no-repeat center/cover;
+                }
+            }
         }
 
         .event-slide {
