@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Jeju Gothic', sans-serif;}
 ol, ul, li {list-style: none;}
 a {text-decoration: none;}
 
@@ -21,6 +21,11 @@ a {text-decoration: none;}
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulScript-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
+}
+
+
+.jejugothic * { 
+ font-family: 'Jeju Gothic', sans-serif;
 }
 
 $mainColor: #ef6d00;
