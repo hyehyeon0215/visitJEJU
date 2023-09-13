@@ -217,64 +217,88 @@ header .header-inner .header-icon > li > .language.on {
   align-items: center;
 }
 
-#visual {
+#hotplace {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 500px;
+  overflow: hidden;
 }
-#visual .slide-frame {
+#hotplace .hotplace-inner {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+#hotplace .hotplace-inner > h2 {
+  height: 40px;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#hotplace .hotplace-inner > h2::before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../../img/icon/map.svg) no-repeat center/cover;
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+#hotplace .hotplace-inner .hotplace-slide {
+  width: 100%;
+  height: 100%;
+}
+#hotplace .hotplace-inner .hotplace-slide .slide-frame {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
   width: 100%;
+  height: 400px;
+  border-radius: 20px;
 }
-#visual .slide-frame > li {
+#hotplace .hotplace-inner .hotplace-slide .slide-frame > li {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   left: 0;
   width: 100%;
-  height: 80vh;
+  height: 400px;
   flex-shrink: 0;
   transition: left 0.5s;
 }
-#visual .slide-frame > li > img {
+#hotplace .hotplace-inner .hotplace-slide .slide-frame > li > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#visual .slide-frame > li .visual-txt {
+#hotplace .hotplace-inner .hotplace-slide .slide-frame > li .visual-txt {
   position: absolute;
   z-index: 2;
-  left: 5%;
-  bottom: 70px;
-  display: flex;
-  align-items: end;
-  gap: 20px;
+  left: 10%;
+  top: 50%;
+  width: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(239, 109, 0, 0.9);
+  padding: 30px 20px;
 }
-#visual .slide-frame > li .visual-txt h2 {
-  font: 72px/1 "Kimjungchul";
+#hotplace .hotplace-inner .hotplace-slide .slide-frame > li .visual-txt h2 {
+  font-weight: normal;
+  font-size: 40px;
+  margin-bottom: 20px;
   color: #fff;
 }
-#visual .slide-frame > li .visual-txt p {
-  font: 24px/1 "Kimjungchul";
+#hotplace .hotplace-inner .hotplace-slide .slide-frame > li .visual-txt p {
+  font-weight: normal;
+  font-size: 20px;
   color: #fff;
 }
-#visual .slide-frame > li::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
+#hotplace .hotplace-inner .hotplace-slide .slide-btns {
   position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-}
-#visual .slide-btns {
-  position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -284,17 +308,17 @@ header .header-inner .header-icon > li > .language.on {
   height: 100px;
   padding: 0 20px;
 }
-#visual .slide-btns li {
+#hotplace .hotplace-inner .hotplace-slide .slide-btns li {
   width: 80px;
   height: 80px;
 }
-#visual .slide-btns li > a {
+#hotplace .hotplace-inner .hotplace-slide .slide-btns li > a {
   display: block;
   width: 100%;
   height: 100%;
   position: relative;
 }
-#visual .slide-btns li > a > img {
+#hotplace .hotplace-inner .hotplace-slide .slide-btns li > a > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -303,52 +327,42 @@ header .header-inner .header-icon > li > .language.on {
   object-fit: cover;
   transition: 0.2s;
 }
-#visual .slide-btns li > a > img:nth-of-type(2) {
+#hotplace .hotplace-inner .hotplace-slide .slide-btns li > a > img:nth-of-type(2) {
   opacity: 0;
   visibility: hidden;
 }
-#visual .slide-btns li:hover > a > img:nth-of-type(1) {
+#hotplace .hotplace-inner .hotplace-slide .slide-btns li:hover > a > img:nth-of-type(1) {
   visibility: hidden;
 }
-#visual .slide-btns li:hover > a > img:nth-of-type(2) {
+#hotplace .hotplace-inner .hotplace-slide .slide-btns li:hover > a > img:nth-of-type(2) {
   opacity: 1;
   visibility: visible;
 }
-#visual .slide-pagination {
+#hotplace .hotplace-inner .hotplace-slide .slide-pagination {
   position: absolute;
   bottom: 30px;
   right: 30px;
   display: flex;
   gap: 10px;
 }
-#visual .slide-pagination > li {
+#hotplace .hotplace-inner .hotplace-slide .slide-pagination > li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: #f7f7f7;
 }
-#visual .slide-pagination > li > a {
-  font: bold 16px/1 "arial";
+#hotplace .hotplace-inner .hotplace-slide .slide-pagination > li > a {
+  font-size: 16px;
+  font-weight: normal;
   color: #333;
 }
-#visual .slide-pagination > li.active {
+#hotplace .hotplace-inner .hotplace-slide .slide-pagination > li.active {
   background-color: #ef6d00;
 }
-#visual .slide-pagination > li.active > a {
+#hotplace .hotplace-inner .hotplace-slide .slide-pagination > li.active > a {
   color: #fff;
-}
-#visual .visual-bar {
-  width: 60%;
-  height: 100px;
-  position: absolute;
-  display: flex;
-  left: 5%;
-  bottom: -50px;
-  background-color: #ef6d00;
-  z-index: 2;
-  border-radius: 20px;
 }
 
 #event {
@@ -485,7 +499,7 @@ header .header-inner .header-icon > li > .language.on {
 }
 #intro .intro-bg > .into-back {
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 0;
   width: 100%;
   animation: background 3s linear infinite;
@@ -587,10 +601,10 @@ header .header-inner .header-icon > li > .language.on {
 
 @keyframes background {
   0% {
-    top: 10%;
+    top: 30%;
   }
   100% {
-    top: 20%;
+    top: 40%;
   }
 }
 

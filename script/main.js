@@ -1,4 +1,4 @@
-const slide = document.querySelector(".slide-frame");
+const slide = document.querySelector(".hotplace-slide");
 let slideWidth = slide.clientWidth;
 
 const slideBtns = document.querySelector(".slide-btns");

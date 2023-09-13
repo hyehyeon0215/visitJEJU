@@ -22,7 +22,7 @@
 
         >.into-back {
             position: absolute;
-            top: 10%;
+            top: 30%;
             left: 0;
             width: 100%;
             animation: background 3s linear infinite;
@@ -140,6 +140,6 @@
 }
 
 @keyframes background {
-    0% {top: 10%}
-    100% {top: 20%;}
+    0% {top: 30%}
+    100% {top: 40%;}
 }

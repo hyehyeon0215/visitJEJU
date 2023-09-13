@@ -1,0 +1,200 @@
+#top-btn {
+    position: fixed;
+    z-index: 2;
+    width: 150px;
+    height: 250px;
+    right: 20px;
+    bottom: 20px;
+
+    >a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+#hotplace {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+
+    .hotplace-inner {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+
+        >h2 {
+            height: 40px;
+            font-size: 30px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 30px;
+                height: 30px;
+                background: url(../../img/icon/map.svg) no-repeat center/cover;
+                margin-bottom: 3px;
+                margin-right: 10px;
+            }
+        }
+
+        .hotplace-slide {
+            width: 100%;
+            height: 100%;
+
+            .slide-frame {
+                position: relative;
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                width: 100%;
+                height: 400px;
+                border-radius: 20px;
+        
+                >li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    left: 0;
+                    width: 100%;
+                    height: 400px;
+                    flex-shrink: 0;
+                    transition: left 0.5s;
+        
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+        
+                    .visual-txt {
+                        position: absolute;
+                        z-index: 2;
+                        left: 10%;
+                        top: 50%;
+                        width: 40%;
+                        transform: translateY(-50%);
+                        background-color: rgba($color: $mainColor, $alpha: .9);
+                        padding: 30px 20px;
+
+        
+                        h2 {
+                            font-weight: normal;
+                            font-size: 40px;
+                            margin-bottom: 20px;
+                            color: #fff;
+                        }
+        
+                        p {
+                            font-weight: normal;
+                            font-size: 20px;
+                            color: #fff;
+                        }
+                    }
+    
+                }
+            }
+        
+            .slide-btns {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100px;
+                padding: 0 20px;
+                
+                li {
+                    width: 80px;
+                    height: 80px;
+        
+                    >a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+        
+                        >img {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transition: .2s;
+        
+                            &:nth-of-type(2) {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                        }
+                    }
+        
+                    &:hover {
+                        >a {
+                            >img {
+        
+                                &:nth-of-type(1) {
+                                    visibility: hidden;
+                                }
+        
+                                &:nth-of-type(2) {
+                                    opacity: 1;
+                                    visibility:visible;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .slide-pagination {
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+                display: flex;
+                gap: 10px;
+        
+                >li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #f7f7f7;
+        
+                    >a {
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: #333;
+                    }
+        
+                    &.active {
+                        background-color: $mainColor;
+        
+                        >a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}
