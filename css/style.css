@@ -465,15 +465,22 @@ header .header-inner .header-icon > li > .language.on {
 }
 #sns .sns-inner > div > ul {
   width: 100%;
-  height: 230px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 #sns .sns-inner > div > a {
+  position: relative;
   display: block;
-  width: 100%;
   height: 20px;
   text-align: right;
   color: #555;
   font-weight: normal;
+}
+#sns .sns-inner > div > a::after {
+  display: inline-block;
+  content: ">>";
+  color: #ef6d00;
+  margin-left: 10px;
 }
 #sns .sns-inner > div.sns-youtube {
   width: 70%;
@@ -490,12 +497,14 @@ header .header-inner .header-icon > li > .language.on {
   flex: 1;
   width: 100%;
   min-width: 0;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  overflow: hidden;
 }
 #sns .sns-inner > div.sns-youtube .youtube-list > li > a {
   display: block;
   width: 100%;
   height: 150px;
-  margin-bottom: 10px;
 }
 #sns .sns-inner > div.sns-youtube .youtube-list > li > a > img {
   width: 100%;
@@ -504,12 +513,15 @@ header .header-inner .header-icon > li > .language.on {
 }
 #sns .sns-inner > div.sns-youtube .youtube-list > li > p {
   width: 100%;
-  height: 20px;
-  font-weight: 16px;
-  line-height: 20px;
+  height: 50px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: 0 10px;
+  color: #777;
 }
 #sns .sns-inner > div.sns-instagram {
   width: 30%;
@@ -520,28 +532,39 @@ header .header-inner .header-icon > li > .language.on {
 #sns .sns-inner > div.sns-instagram .insta-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 5px 0;
 }
 #sns .sns-inner > div.sns-instagram .insta-list > li {
-  width: 33.3333333333%;
-  height: 110px;
-  padding: 0 10px 10px;
+  flex: 1;
+  height: 100%;
+  transition: flex 0.5s;
 }
 #sns .sns-inner > div.sns-instagram .insta-list > li > a {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 #sns .sns-inner > div.sns-instagram .insta-list > li > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: grayscale(0.9);
+  transition: 0.5s;
+}
+#sns .sns-inner > div.sns-instagram .insta-list > li:hover {
+  flex: 3;
+  border: 3px solid #ef6d00;
+}
+#sns .sns-inner > div.sns-instagram .insta-list > li:hover > a > img {
+  filter: grayscale(0);
 }
 
 #QnA {
   width: 100%;
   margin-bottom: 100px;
   padding: 50px 0;
-  background-color: rgba(239, 109, 0, 0.6);
+  background-color: #f8f8f8;
 }
 #QnA .QnA-inner {
   width: 70%;
