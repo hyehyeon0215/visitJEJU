@@ -1,0 +1,30 @@
+#bigdata {
+    width: 100%;
+    padding: 0 0 100px;
+
+    .bigdata-inner {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        >h2 {
+            height: 40px;
+            font-size: 30px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 30px;
+                height: 30px;
+                background: url(../img/icon/bigdata.svg) no-repeat center/cover;
+                margin-bottom: 3px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

@@ -282,7 +282,7 @@ header .header-inner .header-icon > li > .language.on {
   top: 50%;
   width: 40%;
   transform: translateY(-50%);
-  background-color: rgba(239, 109, 0, 0.9);
+  background-color: rgba(242, 136, 56, 0.8);
   padding: 30px 20px;
 }
 #hotplace .hotplace-inner .hotplace-slide .slide-frame > li .visual-txt h2 {
@@ -759,6 +759,33 @@ header .header-inner .header-icon > li > .language.on {
   100% {
     top: 40%;
   }
+}
+#bigdata {
+  width: 100%;
+  padding: 0 0 100px;
+}
+#bigdata .bigdata-inner {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#bigdata .bigdata-inner > h2 {
+  height: 40px;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#bigdata .bigdata-inner > h2::before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../img/icon/bigdata.svg) no-repeat center/cover;
+  margin-bottom: 3px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
