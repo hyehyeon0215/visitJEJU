@@ -787,5 +787,60 @@ header .header-inner .header-icon > li > .language.on {
   margin-bottom: 3px;
   margin-right: 10px;
 }
+#bigdata .bigdata-inner .bigdata-nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #ef6d00;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+#bigdata .bigdata-inner .bigdata-nav > li {
+  flex: 1;
+  position: relative;
+}
+#bigdata .bigdata-inner .bigdata-nav > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 24px;
+  color: #fff;
+}
+#bigdata .bigdata-inner .bigdata-nav > li > a > span {
+  font-size: 16px;
+  color: #eee;
+}
+#bigdata .bigdata-inner .bigdata-nav > li::after {
+  display: block;
+  content: "";
+  width: 0.5px;
+  height: 60%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #eee;
+  opacity: 0.4;
+}
+#bigdata .bigdata-inner .bigdata-nav > li:first-of-type {
+  padding-left: 20px;
+}
+#bigdata .bigdata-inner .bigdata-nav > li:last-of-type {
+  padding-right: 20px;
+}
+#bigdata .bigdata-inner .bigdata-nav > li:last-of-type::after {
+  display: none;
+}
+#bigdata .bigdata-inner .bigdata-nav > li:hover {
+  flex: 1.5;
+  background-color: #333;
+  position: relative;
+  z-index: 2;
+}
 
 /*# sourceMappingURL=style.css.map */
