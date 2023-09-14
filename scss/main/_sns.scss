@@ -41,6 +41,7 @@
                 text-align: right;
                 color: #555;
                 font-weight: normal;
+                font-size: 14px;
 
                 &::after {
                     display: inline-block;
@@ -112,7 +113,6 @@
                 .insta-list {
                     display: flex;
                     flex-wrap: wrap;
-                    padding: 5px 0;
 
                     >li {
                         flex: 1;

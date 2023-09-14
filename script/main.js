@@ -117,18 +117,62 @@ for (let i = 0; i < maxSlide; i++) {
 }
 
 
+// s
+
+// slideBtns.addEventListener("mouseover", () => {
+//     clearInterval(loopInterval);
+// });
+  
+// slideBtns.addEventListener("mouseout", () => {
+//     loopInterval = setInterval(() => {
+//       nextMove();
+//     }, 5000);
+// });
+
+
+let startPoint = 0;
+let endPoint = 0;
+
+
+slide.addEventListener("mousedown", (e) => {
+  startPoint = e.pageX; // 마우스 드래그 시작 위치 저장
+});
+
+slide.addEventListener("mouseup", (e) => {
+  endPoint = e.pageX; // 마우스 드래그 끝 위치 저장
+  if (startPoint < endPoint) {
+    prevMove();
+  } else if (startPoint > endPoint) {
+    nextMove();
+  }
+});
+
+slide.addEventListener("touchstart", (e) => {
+  startPoint = e.touches[0].pageX;
+});
+slide.addEventListener("touchend", (e) => {
+  endPoint = e.changedTouches[0].pageX;
+  if (startPoint < endPoint) {
+    prevMove();
+  } else if (startPoint > endPoint) {
+    nextMove();
+  }
+});
+
 let loopInterval = setInterval(() => {
   nextMove();
-}, 5000);
+}, 3000);
 
-slideBtns.addEventListener("mouseover", () => {
-    clearInterval(loopInterval);
+// 슬라이드에 마우스가 올라간 경우 루프 멈추기
+slide.addEventListener("mouseover", () => {
+  clearInterval(loopInterval);
 });
-  
-slideBtns.addEventListener("mouseout", () => {
-    loopInterval = setInterval(() => {
-      nextMove();
-    }, 5000);
+
+// 슬라이드에서 마우스가 나온 경우 루프 재시작하기
+slide.addEventListener("mouseout", () => {
+  loopInterval = setInterval(() => {
+    nextMove();
+  }, 3000);
 });
 
 

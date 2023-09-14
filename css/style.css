@@ -374,10 +374,7 @@ header .header-inner .header-icon > li > .language.on {
   margin: 0 auto;
   position: relative;
 }
-#event .event-inner .event-txt {
-  width: 100%;
-}
-#event .event-inner .event-txt > h2 {
+#event .event-inner > h2 {
   height: 40px;
   font-size: 30px;
   font-weight: normal;
@@ -387,7 +384,7 @@ header .header-inner .header-icon > li > .language.on {
   align-items: center;
   color: #333;
 }
-#event .event-inner .event-txt > h2::before {
+#event .event-inner > h2::before {
   display: inline-block;
   content: "";
   width: 30px;
@@ -475,6 +472,7 @@ header .header-inner .header-icon > li > .language.on {
   text-align: right;
   color: #555;
   font-weight: normal;
+  font-size: 14px;
 }
 #sns .sns-inner > div > a::after {
   display: inline-block;
@@ -532,7 +530,6 @@ header .header-inner .header-icon > li > .language.on {
 #sns .sns-inner > div.sns-instagram .insta-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 0;
 }
 #sns .sns-inner > div.sns-instagram .insta-list > li {
   flex: 1;
@@ -564,7 +561,7 @@ header .header-inner .header-icon > li > .language.on {
   width: 100%;
   margin-bottom: 100px;
   padding: 50px 0;
-  background-color: #f8f8f8;
+  background-color: #333;
 }
 #QnA .QnA-inner {
   width: 70%;
