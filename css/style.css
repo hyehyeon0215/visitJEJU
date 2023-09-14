@@ -259,6 +259,8 @@ footer .sitemap .sitemap-gnb {
   padding: 0 15%;
   gap: 30px;
   overflow: hidden;
+  justify-content: center;
+  text-align: center;
 }
 footer .sitemap .sitemap-gnb > li > a {
   display: block;
