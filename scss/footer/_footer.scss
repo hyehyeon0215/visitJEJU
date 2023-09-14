@@ -104,4 +104,79 @@ footer {
             }
         }
     }
+    .footer-content {
+        width: 100%;
+        background-color: #f7f7f7;
+        padding: 40px 15%;
+        position: relative;
+
+        .visitjeju-number {
+            >p {
+                font-size: 34px;
+                margin-bottom: 40px;
+                &:first-of-type {
+                    font-size: 22px;
+                    font-weight: normal;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .footer-list {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+
+            >li {
+                >a {
+                    font-size: 14px;
+                    color: #888;
+
+                    &.bold {
+                        color: #222;
+                    }
+                }
+            }
+        }
+
+        .footer-txt {
+            margin-bottom: 30px;
+            >li {
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: #888;
+
+                >ul {
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .certification {
+            position: absolute;
+            top: 20px;
+            right: 15%;
+            display: flex;
+            right: 15%;
+            width: 400px;
+            gap: 20px;
+
+            >li {
+                flex: 1.5;
+                &:first-of-type {
+                    flex: 1;
+                }
+                >img {
+                    width: 100%;;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }
