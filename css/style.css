@@ -550,6 +550,8 @@ footer .footer-content .certification > li > img {
   background: url("../img/icon/map.svg") no-repeat center/cover;
 }
 #event .event-inner .event-slide {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 300px;
   display: flex;
@@ -557,30 +559,59 @@ footer .footer-content .certification > li > img {
   margin: 0 auto;
 }
 #event .event-inner .event-slide > li {
+  width: 100%;
+  height: 100%;
+}
+#event .event-inner .event-slide > li > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#event .event-inner .event-slide > li > ul > li {
   width: 25%;
   height: 100%;
   padding: 0px 10px;
 }
-#event .event-inner .event-slide > li a {
+#event .event-inner .event-slide > li > ul > li a {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #f7f7f7;
+  border: 1px solid #eee;
   border-radius: 20px;
   overflow: hidden;
 }
-#event .event-inner .event-slide > li a .event-img {
+#event .event-inner .event-slide > li > ul > li a .event-img {
   width: 100%;
   height: 70%;
   overflow: hidden;
 }
-#event .event-inner .event-slide > li a .event-img > img {
+#event .event-inner .event-slide > li > ul > li a .event-img > img {
+  height: 100%;
   object-fit: cover;
 }
+#event .event-inner .event-slide > li > ul > li a > p {
+  font-size: 20px;
+  width: 100%;
+  height: 30%;
+  padding: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+}
+#event .event-inner .event-slide > li > ul > li a > p > span {
+  margin-top: 10px;
+  display: block;
+  font-size: 14px;
+  color: #888;
+}
 #event .event-inner .event-btns {
+  z-index: 0;
   position: absolute;
   width: 110%;
-  height: 400px;
+  height: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -717,7 +748,7 @@ footer .footer-content .certification > li > img {
   width: 100%;
   margin-bottom: 100px;
   padding: 50px 0;
-  background-color: #333;
+  background-color: #444;
 }
 #QnA .QnA-inner {
   width: 70%;
@@ -760,29 +791,68 @@ footer .footer-content .certification > li > img {
 }
 #QnA .QnA-inner .QnA-list > div {
   flex: 1;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
 }
 #QnA .QnA-inner .QnA-list > div > h2 {
   width: 100%;
-  height: 40px;
-  font-size: 24px;
+  height: 60px;
+  font-size: 22px;
   font-weight: normal;
-  margin-bottom: 30px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #333;
+  background-color: #A7C0CE;
 }
 #QnA .QnA-inner .QnA-list > div > ul {
   width: 100%;
+  padding: 20px;
 }
 #QnA .QnA-inner .QnA-list > div > ul > li {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
 }
-#QnA .QnA-inner > a {
+#QnA .QnA-inner .QnA-list > div > ul > li > a > p {
+  font-size: 18px;
+  color: #333;
+}
+#QnA .QnA-inner .QnA-list > div > ul > li span {
+  font-size: 14px;
+  color: #888;
+}
+#QnA .QnA-inner .QnA-list > div > ul > li::after {
+  position: absolute;
   display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #f7f7f7;
+  bottom: 0px;
+}
+#QnA .QnA-inner .QnA-list > div > ul > li:last-of-type::after {
+  display: none;
+}
+#QnA .QnA-inner .QnA-btn {
+  width: 100%;
+  height: 50px;
   text-align: right;
+}
+#QnA .QnA-inner .QnA-btn > a {
+  display: inline-block;
+  height: 100%;
+  padding: 0 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  background-color: #ef6d00;
+  font-size: 20px;
+  color: #f7f7f7;
 }
 
 #intro {

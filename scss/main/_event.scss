@@ -29,6 +29,8 @@
         }
 
         .event-slide {
+            position: relative;
+            z-index: 1;
             width: 100%;
             height: 300px;
             display: flex;
@@ -36,25 +38,57 @@
             margin: 0 auto;
 
             >li {
-                width: 25%;
+                width: 100%;
                 height: 100%;
-                padding: 0px 10px;
 
-                a {
-                    display: block;
+                >ul {
                     width: 100%;
                     height: 100%;
-                    background-color: #f7f7f7;
-                    border-radius: 20px;
+                    display: flex;
                     overflow: hidden;
+                    margin: 0 auto;
 
-                    .event-img {
-                        width: 100%;
-                        height: 70%;
-                        overflow: hidden;
+                    >li {
+                        width: 25%;
+                        height: 100%;
+                        padding: 0px 10px;
 
-                        >img {
-                            object-fit: cover;
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            border: 1px solid #eee;
+                            border-radius: 20px;
+                            overflow: hidden;
+        
+                            .event-img {
+                                width: 100%;
+                                height: 70%;
+                                overflow: hidden;
+        
+                                >img {
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                            >p {
+                                font-size: 20px;
+                                width: 100%;
+                                height: 30%;
+                                padding: 20px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                color: #333;
+
+                                >span {
+                                    margin-top: 10px;
+                                    display: block;
+                                    font-size: 14px;
+                                    color: #888;
+                                }
+                            }
                         }
                     }
                 }
@@ -62,9 +96,10 @@
         }
 
         .event-btns {
+            z-index: 0;
             position: absolute;
             width: 110%;
-            height: 400px;
+            height: 300px;
             display: flex;
             justify-content: space-between;
             align-items: center;

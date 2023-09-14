@@ -2,7 +2,7 @@
     width: 100%;
     margin-bottom: 100px;
     padding: 50px 0;
-    background-color: #333;
+    background-color: #444;
 
     .QnA-inner {
         width: 70%;
@@ -48,34 +48,82 @@
 
             >div {
                 flex: 1;
+                background-color: #fff;
+                border-radius: 20px;
+                overflow: hidden;
 
                 >h2 {
                     width: 100%;
-                    height: 40px;
-                    font-size: 24px;
+                    height: 60px;
+                    font-size: 22px;
                     font-weight: normal;
-                    margin-bottom: 30px;
                     overflow: hidden;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: #fff;
+                    color: #333;
+                    background-color: #A7C0CE;
                 }
 
                 >ul {
                     width: 100%;
+                    padding: 20px;
 
                     >li {
+                        position: relative;
                         display: flex;
                         justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        height: 50px;
+
+                        >a {
+                            >p {
+                                font-size: 18px;
+                                color: #333;
+                            }
+                        }
+
+                        span {
+                            font-size: 14px;
+                            color: #888;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            display: block;
+                            content: '';
+                            width: 100%;
+                            height: 1px;
+                            background-color: #f7f7f7;
+                            bottom: -0px;
+                        }
+
+                        &:last-of-type {
+                            &::after {
+                                display: none;
+                            }
+                        }
                     }
                 }
             }
 
         }
-        >a {
-            display: block;
+        .QnA-btn {
+            width: 100%;
+            height: 50px;
             text-align: right;
+
+            >a {
+                display: inline-block;
+                height: 100%;
+                padding: 0 50px;
+                line-height: 50px;
+                border-radius: 10px;
+                background-color: $mainColor;
+                font-size: 20px;
+                color: #f7f7f7;
+            }
         }
     }
 
