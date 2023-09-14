@@ -569,7 +569,6 @@ footer .footer-content .certification > li > img {
   height: 100%;
   display: flex;
   overflow: hidden;
-  margin: 0 auto;
 }
 #event .event-inner .event-slide > li > ul > li {
   width: 25%;
@@ -620,6 +619,10 @@ footer .footer-content .certification > li > img {
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
+}
+#event .event-inner .event-btns li a i {
+  font-size: 50px;
+  color: #333;
 }
 
 #sns {

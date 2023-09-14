@@ -207,3 +207,21 @@ fetch(url)
         });
       youtubeList.innerHTML = result;
 });
+
+
+// 이벤트 영역 슬라이드
+
+const event_ul = document.querySelector(".event-slide");
+const event_content = event_ul.children;
+const btns = document.querySelector(".event-btns");
+const [event_prev, event_next] = btns.children;
+
+event_prev.addEventListener("click", (e) => {
+  e.preventDefault();
+  event_ul.prepend(event_ul.lastElementChild);
+})
+
+event_next.addEventListener("click", (e) => {
+  e.preventDefault();
+  event_ul.append(event_ul.firstElementChild);
+})
