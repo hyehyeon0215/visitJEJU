@@ -122,3 +122,177 @@
         }
     }
 }
+
+@media (max-width: 1500px) {
+    #event {
+        .event-inner {
+            .event-slide {
+
+                >li {
+                    >ul {
+                        >li {
+                            a {
+    
+                                >p {
+                                    font-size: 16px;
+                                    padding: 20px 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    #event {
+        .event-inner {
+            width: 90%;
+    
+            >h2 {
+                font-size: 26px;
+                margin-bottom: 20px;
+    
+                &::before {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+
+    
+            .event-btns {
+                width: 105%;
+                height: 350px;
+                top: 0;
+    
+                li {
+                    a {
+                        i {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    #event {
+        .event-inner {
+            >h2 {
+                font-size: 22px;
+    
+                &::before {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+
+            .event-slide {
+                height: 200px;
+    
+                >li {
+    
+                    >ul {
+    
+                        >li {
+                            padding: 0px 5px;
+    
+                            a {
+                                border-radius: 10px;
+    
+                                >p {
+                                    margin-top: 5px;
+                                    font-size: 16px;
+                                    padding: 5px;
+    
+                                    >span {
+                                        margin-top: 7px;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+    
+            .event-btns {
+                height: 240px;
+                li {
+                    a {
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    #event {
+        .event-inner {
+            >h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+    
+                &::before {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .event-slide {
+                height: 300px;
+    
+                >li {
+    
+                    >ul {
+                        flex-wrap: wrap;
+                        >li {
+                            width: 50%;
+                            height: 50%;
+                            padding: 7px;
+    
+                            a {
+                                border-radius: 10px;
+
+                                .event-img {
+                                    height: 60%;
+                                }
+    
+                                >p {
+                                    font-size: 14px;
+                                    padding: 5px 10px;
+    
+                                    >span {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+    
+            .event-btns {
+                height: 340px;
+                li {
+                    margin-top: 30px;
+                    a {
+                        i {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

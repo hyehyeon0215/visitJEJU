@@ -811,6 +811,109 @@ footer .footer-content .certification > li > img {
   color: #333;
 }
 
+@media (max-width: 1500px) {
+  #event .event-inner .event-slide > li > ul > li a > p {
+    font-size: 16px;
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 1300px) {
+  #event .event-inner {
+    width: 90%;
+  }
+  #event .event-inner > h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  #event .event-inner > h2::before {
+    width: 26px;
+    height: 26px;
+  }
+  #event .event-inner .event-btns {
+    width: 105%;
+    height: 350px;
+    top: 0;
+  }
+  #event .event-inner .event-btns li a i {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  #event .event-inner > h2 {
+    font-size: 22px;
+  }
+  #event .event-inner > h2::before {
+    width: 22px;
+    height: 22px;
+  }
+  #event .event-inner .event-slide {
+    height: 200px;
+  }
+  #event .event-inner .event-slide > li > ul > li {
+    padding: 0px 5px;
+  }
+  #event .event-inner .event-slide > li > ul > li a {
+    border-radius: 10px;
+  }
+  #event .event-inner .event-slide > li > ul > li a > p {
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 5px;
+  }
+  #event .event-inner .event-slide > li > ul > li a > p > span {
+    margin-top: 7px;
+    font-size: 12px;
+  }
+  #event .event-inner .event-btns {
+    height: 240px;
+  }
+  #event .event-inner .event-btns li a i {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  #event .event-inner > h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  #event .event-inner > h2::before {
+    width: 20px;
+    height: 20px;
+  }
+  #event .event-inner .event-slide {
+    height: 300px;
+  }
+  #event .event-inner .event-slide > li > ul {
+    flex-wrap: wrap;
+  }
+  #event .event-inner .event-slide > li > ul > li {
+    width: 50%;
+    height: 50%;
+    padding: 7px;
+  }
+  #event .event-inner .event-slide > li > ul > li a {
+    border-radius: 10px;
+  }
+  #event .event-inner .event-slide > li > ul > li a .event-img {
+    height: 60%;
+  }
+  #event .event-inner .event-slide > li > ul > li a > p {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  #event .event-inner .event-slide > li > ul > li a > p > span {
+    font-size: 12px;
+  }
+  #event .event-inner .event-btns {
+    height: 340px;
+  }
+  #event .event-inner .event-btns li {
+    margin-top: 30px;
+  }
+  #event .event-inner .event-btns li a i {
+    font-size: 14px;
+  }
+}
 #sns {
   width: 100%;
   padding: 50px 0 100px;
