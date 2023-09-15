@@ -42,6 +42,7 @@ tab_close.addEventListener(("click"), (e)=>{
 
     tab_li.forEach((el)=>{
         el.classList.remove("gray");
+        el.classList.remove("on");
     })
 })
 
