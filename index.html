@@ -187,8 +187,12 @@
                 <h3>제주 여행에 관해서라면 어떤 것이라도 물어보세요!<br>
                 비짓제주 상주 전문가를 비롯해 제주를 잘 아는 사람이라면 누구에게라도 답변 받을 수 있습니다.</h3>
             </div>
+            <ul class="QnA-tab">
+                <li class="on"><a href="#">새로 올라온 Q&A</a></li>
+                <li><a href="#">많이 본 Q&A</a></li>
+            </ul>
             <div class="QnA-list">
-                <div class="new-QnA">
+                <div class="new-QnA active">
                     <h2>새로 올라온 Q&A</h2>
                     <ul>
                         <li>
@@ -473,5 +477,22 @@
             </ul>
         </div>
     </footer>
+    <script>
+        const QnA_btns = document.querySelectorAll('.QnA-tab > li');
+        const QnA_box = document.querySelectorAll('.QnA-list > div');
+        QnA_btns.forEach((el, index)=>{
+            el.addEventListener(("click"), (e)=>{
+                e.preventDefault();
+                QnA_btns.forEach((el)=>{
+                    el.classList.remove('on');
+                })
+                QnA_box.forEach((el)=>{
+                    el.classList.remove('active');
+                })
+                el.classList.add('on');
+                QnA_box[index].classList.add('active');
+            })
+        })
+    </script>
 </body>
 </html>
