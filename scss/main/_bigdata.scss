@@ -93,3 +93,134 @@
         }
     }
 }
+
+@media (max-width: 1600px) {
+    #bigdata {
+        .bigdata-inner {
+            .bigdata-nav {
+                >li {
+                    >a {
+                        font-size: 20px;
+                        >span {
+                            font-size: 14px;
+                        }
+                    }
+    
+                    &:first-of-type {
+                        padding-left: 0px;
+                    }
+    
+                    &:last-of-type {
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    #bigdata {
+        padding: 0 0 100px;
+        .bigdata-inner {
+            width: 90%;
+
+            >h2 {
+                font-size: 26px;
+                margin-bottom: 20px;
+    
+                &::before {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+    
+            .bigdata-nav {
+                height: 60px;
+                border-radius: 20px;
+    
+                >li {
+
+                    >a {
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        flex: 1;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    #bigdata {
+
+        .bigdata-inner {
+
+            >h2 {
+                font-size: 22px;
+    
+                &::before {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+    
+            .bigdata-nav {
+    
+                >li {
+
+                    >a {
+                        font-size: 18px;
+
+                        >span {
+                            display: none;
+                        }
+                    }
+                    &:hover {
+                        flex: 1;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    #bigdata {
+        padding: 0 0 80px;
+
+        .bigdata-inner {
+
+            >h2 {
+                font-size: 20px;
+    
+                &::before {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+    
+            .bigdata-nav {
+                height: 100px;
+                flex-wrap: wrap;
+                border-radius: 0px;
+                background-color: #fff;
+                gap: 5px;
+
+                >li {
+                    flex: auto;
+                    width: 45%;
+                    height: 48%;
+                    background-color: $mainColor;
+                    >a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

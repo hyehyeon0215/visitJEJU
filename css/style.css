@@ -872,6 +872,9 @@ footer .footer-content .certification > li > img {
   }
 }
 @media (max-width: 768px) {
+  #event {
+    padding: 0 0 50px;
+  }
   #event .event-inner > h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -1399,6 +1402,9 @@ footer .footer-content .certification > li > img {
   }
 }
 @media (max-width: 768px) {
+  #QnA {
+    margin-bottom: 50px;
+  }
   #QnA .QnA-inner .QnA-txt > h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -1660,6 +1666,93 @@ footer .footer-content .certification > li > img {
   background-color: #333;
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 1600px) {
+  #bigdata .bigdata-inner .bigdata-nav > li > a {
+    font-size: 20px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li > a > span {
+    font-size: 14px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li:first-of-type {
+    padding-left: 0px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li:last-of-type {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 1300px) {
+  #bigdata {
+    padding: 0 0 100px;
+  }
+  #bigdata .bigdata-inner {
+    width: 90%;
+  }
+  #bigdata .bigdata-inner > h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  #bigdata .bigdata-inner > h2::before {
+    width: 26px;
+    height: 26px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav {
+    height: 60px;
+    border-radius: 20px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li > a {
+    font-size: 16px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li:hover {
+    flex: 1;
+  }
+}
+@media (max-width: 1024px) {
+  #bigdata .bigdata-inner > h2 {
+    font-size: 22px;
+  }
+  #bigdata .bigdata-inner > h2::before {
+    width: 22px;
+    height: 22px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li > a {
+    font-size: 18px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li > a > span {
+    display: none;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li:hover {
+    flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  #bigdata {
+    padding: 0 0 80px;
+  }
+  #bigdata .bigdata-inner > h2 {
+    font-size: 20px;
+  }
+  #bigdata .bigdata-inner > h2::before {
+    width: 20px;
+    height: 20px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav {
+    height: 100px;
+    flex-wrap: wrap;
+    border-radius: 0px;
+    background-color: #fff;
+    gap: 5px;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li {
+    flex: auto;
+    width: 45%;
+    height: 48%;
+    background-color: #ef6d00;
+  }
+  #bigdata .bigdata-inner .bigdata-nav > li > a {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
