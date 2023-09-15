@@ -2315,5 +2315,8 @@ footer #mini-top-btn > a::before {
     font-size: 12px;
   }
 }
+#sub-qna {
+  min-height: 60vh;
+}
 
 /*# sourceMappingURL=style.css.map */
