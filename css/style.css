@@ -810,22 +810,27 @@ footer .footer-content .certification > li > img {
 }
 @media (max-width: 768px) {
   #hotplace {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+  }
+  #hotplace .hotplace-inner {
+    width: 100%;
   }
   #hotplace .hotplace-inner > h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    padding: 0 5%;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   #hotplace .hotplace-inner > h2::before {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
   }
   #hotplace .hotplace-inner .hotplace-slide {
     height: 150px;
   }
   #hotplace .hotplace-inner .hotplace-slide .slide-frame {
     height: 150px;
-    border-radius: 15px;
+    border-radius: 0px;
   }
   #hotplace .hotplace-inner .hotplace-slide .slide-frame > li {
     height: 150px;
@@ -837,6 +842,7 @@ footer .footer-content .certification > li > img {
     left: 15px;
     transform: none;
     padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
   }
   #hotplace .hotplace-inner .hotplace-slide .slide-frame > li .visual-txt h2 {
     font-size: 14px;
@@ -847,7 +853,7 @@ footer .footer-content .certification > li > img {
   }
   #hotplace .hotplace-inner .hotplace-slide .slide-btns {
     height: 150px;
-    top: 50px;
+    top: 45px;
     padding: 0;
   }
   #hotplace .hotplace-inner .hotplace-slide .slide-btns li {
@@ -1032,15 +1038,16 @@ footer .footer-content .certification > li > img {
 }
 @media (max-width: 768px) {
   #event {
-    padding: 0 0 50px;
+    padding: 0 0 40px;
   }
   #event .event-inner > h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   #event .event-inner > h2::before {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
   }
   #event .event-inner .event-slide {
     height: 300px;
@@ -1060,11 +1067,11 @@ footer .footer-content .certification > li > img {
     height: 60%;
   }
   #event .event-inner .event-slide > li > ul > li a > p {
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 10px;
   }
   #event .event-inner .event-slide > li > ul > li a > p > span {
-    font-size: 12px;
+    font-size: 10px;
   }
   #event .event-inner .event-btns {
     height: 340px;
@@ -1270,18 +1277,19 @@ footer .footer-content .certification > li > img {
 }
 @media (max-width: 768px) {
   #sns {
-    padding: 0 0 50px;
+    padding: 0 0 40px;
   }
   #sns .sns-inner {
     display: block;
   }
   #sns .sns-inner > div > h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   #sns .sns-inner > div > h2::before {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
   }
   #sns .sns-inner > div > ul {
     height: 120px;
@@ -1296,14 +1304,14 @@ footer .footer-content .certification > li > img {
   #sns .sns-inner > div.sns-youtube {
     width: 100%;
     padding-right: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   #sns .sns-inner > div.sns-youtube .youtube-list {
     display: flex;
     gap: 10px;
   }
   #sns .sns-inner > div.sns-youtube .youtube-list > li {
-    border-radius: 15px;
+    border-radius: 5px;
   }
   #sns .sns-inner > div.sns-youtube .youtube-list > li > a {
     height: 90px;
@@ -1312,6 +1320,40 @@ footer .footer-content .certification > li > img {
     height: 30px;
     line-height: 30px;
     font-size: 12px;
+    padding: 0 5px;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list {
+    gap: 5px;
+    height: 100px;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li {
+    flex: 1;
+    transition: none;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li > a > img {
+    filter: grayscale(0);
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li:hover {
+    flex: 1;
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  #sns .sns-inner > div.sns-youtube .youtube-list {
+    height: 90px;
+    display: flex;
+    gap: 5px;
+  }
+  #sns .sns-inner > div.sns-youtube .youtube-list > li {
+    border-radius: 5px;
+  }
+  #sns .sns-inner > div.sns-youtube .youtube-list > li > a {
+    height: 60px;
+  }
+  #sns .sns-inner > div.sns-youtube .youtube-list > li > p {
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
     padding: 0 5px;
   }
   #sns .sns-inner > div.sns-instagram .insta-list {
@@ -1562,53 +1604,55 @@ footer .footer-content .certification > li > img {
 }
 @media (max-width: 768px) {
   #QnA {
-    margin-bottom: 50px;
+    padding: 40px 0;
+    margin-bottom: 40px;
   }
   #QnA .QnA-inner .QnA-txt > h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   #QnA .QnA-inner .QnA-txt > h2::before {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
   }
   #QnA .QnA-inner .QnA-txt > h3 {
     display: none;
   }
   #QnA .QnA-inner .QnA-tab {
     height: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   #QnA .QnA-inner .QnA-tab > li > a {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 30px;
   }
   #QnA .QnA-inner .QnA-list {
     padding: 15px 0;
   }
   #QnA .QnA-inner .QnA-list > div {
-    border-radius: 10px;
+    border-radius: 5px;
   }
   #QnA .QnA-inner .QnA-list > div > ul {
-    padding: 10px;
+    padding: 5px 10px;
   }
   #QnA .QnA-inner .QnA-list > div > ul > li > a {
     width: 65%;
   }
   #QnA .QnA-inner .QnA-list > div > ul > li > a > p {
-    font-size: 14px;
+    font-size: 12px;
   }
   #QnA .QnA-inner .QnA-list > div > ul > li span {
     width: 35%;
-    font-size: 12px;
+    font-size: 10px;
   }
   #QnA .QnA-inner .QnA-btn {
-    height: 25px;
+    height: 20px;
   }
   #QnA .QnA-inner .QnA-btn > a {
     padding: 0 15px;
-    line-height: 25px;
-    font-size: 14px;
+    line-height: 20px;
+    font-size: 12px;
     border-radius: 5px;
   }
 }
@@ -1871,7 +1915,7 @@ footer .footer-content .certification > li > img {
     padding: 100px 0px 0px;
   }
   #intro .intro-content {
-    width: 90%;
+    padding: 0px;
   }
   #intro .intro-content .intro-txt {
     flex-direction: column;
@@ -1882,6 +1926,7 @@ footer .footer-content .certification > li > img {
     font-size: 36px;
   }
   #intro .intro-content .intro-txt p {
+    margin: 0 0 10px 5px;
     font-size: 12px;
   }
   #intro .intro-content .intro-search .intro-searchBar {
@@ -2058,11 +2103,13 @@ footer .footer-content .certification > li > img {
     padding: 0 0 80px;
   }
   #bigdata .bigdata-inner > h2 {
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   #bigdata .bigdata-inner > h2::before {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
   }
   #bigdata .bigdata-inner .bigdata-nav {
     height: 100px;
@@ -2078,7 +2125,7 @@ footer .footer-content .certification > li > img {
     background-color: #ef6d00;
   }
   #bigdata .bigdata-inner .bigdata-nav > li > a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 

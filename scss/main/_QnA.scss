@@ -304,17 +304,19 @@
 
 @media (max-width: $mobile) {
     #QnA {
-        margin-bottom: 50px;
+        padding: 40px 0;
+        margin-bottom: 40px;
         .QnA-inner {
             .QnA-txt {
 
                 >h2 {
-                    font-size: 20px;
-                    margin-bottom: 10px;
+                    font-size: 16px;
+                    margin-bottom: 5px;
         
                     &::before {
-                        width: 20px;
-                        height: 20px;
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 5px;
                     }
                 }
 
@@ -326,12 +328,12 @@
 
             .QnA-tab {
                 height: 30px;
-                border-radius: 10px;
+                border-radius: 5px;
 
                 >li {
 
                     >a {
-                        font-size: 14px;
+                        font-size: 12px;
                         line-height: 30px;
                     }
                 }
@@ -341,23 +343,23 @@
                 padding: 15px 0;
     
                 >div {
-                    border-radius: 10px;
+                    border-radius: 5px;
 
                     >ul {
-                        padding: 10px;
+                        padding: 5px 10px;
     
                         >li {
     
                             >a {
                                 width: 65%;
                                 >p {
-                                    font-size: 14px;
+                                    font-size: 12px;
                                 }
                             }
     
                             span {
                                 width: 35%;
-                                font-size: 12px;
+                                font-size: 10px;
                             }
                         }
                     }
@@ -367,12 +369,12 @@
             }
 
             .QnA-btn {
-                height: 25px;
+                height: 20px;
     
                 >a {
                     padding: 0 15px;
-                    line-height: 25px;
-                    font-size: 14px;
+                    line-height: 20px;
+                    font-size: 12px;
                     border-radius: 5px;
                 }
             }

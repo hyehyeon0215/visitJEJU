@@ -237,15 +237,16 @@
 
 @media (max-width: $mobile) {
     #event {
-        padding: 0 0 50px;
+        padding: 0 0 40px;
         .event-inner {
             >h2 {
-                font-size: 20px;
-                margin-bottom: 10px;
+                font-size: 16px;
+                margin-bottom: 5px;
     
                 &::before {
-                    width: 20px;
-                    height: 20px;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 5px;
                 }
             }
 
@@ -269,11 +270,11 @@
                                 }
     
                                 >p {
-                                    font-size: 14px;
+                                    font-size: 12px;
                                     padding: 5px 10px;
     
                                     >span {
-                                        font-size: 12px;
+                                        font-size: 10px;
                                     }
                                 }
                             }

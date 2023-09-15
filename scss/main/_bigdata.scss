@@ -196,11 +196,13 @@
         .bigdata-inner {
 
             >h2 {
-                font-size: 20px;
+                font-size: 16px;
+                margin-bottom: 5px;
     
                 &::before {
-                    width: 20px;
-                    height: 20px;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 5px;
                 }
             }
     
@@ -217,7 +219,7 @@
                     height: 48%;
                     background-color: $mainColor;
                     >a {
-                        font-size: 14px;
+                        font-size: 12px;
                     }
                 }
             }

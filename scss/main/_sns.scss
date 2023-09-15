@@ -246,18 +246,19 @@
 
 @media (max-width: $mobile) {
     #sns {
-        padding: 0 0 50px;
+        padding: 0 0 40px;
     
         .sns-inner {
             display: block;
             >div {
                 >h2 {
-                    font-size: 18px;
-                    margin-bottom: 15px;
+                    font-size: 16px;
+                    margin-bottom: 5px;
         
                     &::before {
-                        width: 20px;
-                        height: 20px;
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 5px;
                     }
                 }
     
@@ -278,14 +279,14 @@
                 &.sns-youtube {
                     width: 100%;
                     padding-right: 0px;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
     
                     .youtube-list {
                         display: flex;
                         gap: 10px;
     
                         >li {
-                            border-radius: 15px;
+                            border-radius: 5px;
     
                             >a {
                                 height: 90px;
@@ -295,6 +296,63 @@
                                 height: 30px;
                                 line-height: 30px;
                                 font-size: 12px;
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+                }
+    
+                &.sns-instagram {
+                    
+                    .insta-list {
+                        gap: 5px;
+                        height: 100px;
+
+                        >li {
+                            flex: 1;
+                            transition: none;
+    
+                            >a {
+    
+                                >img {
+                                    filter: grayscale(0);
+                                }
+                            }
+    
+                            &:hover {
+                                flex: 1;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #sns {
+        .sns-inner {
+            >div {
+                
+                &.sns-youtube {
+                    .youtube-list {
+                        height: 90px;
+                        display: flex;
+                        gap: 5px;
+    
+                        >li {
+                            border-radius: 5px;
+    
+                            >a {
+                                height: 60px;
+                            }
+    
+                            >p {
+                                height: 30px;
+                                line-height: 30px;
+                                font-size: 10px;
                                 padding: 0 5px;
                             }
                         }
