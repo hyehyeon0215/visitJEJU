@@ -21,7 +21,7 @@ header {
   position: fixed;
   z-index: 3;
   background-color: #f8f8f8;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25), 0 2px 10px rgba(0, 0, 0, 0.01);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.01);
 }
 header .header-inner {
   width: 70%;
