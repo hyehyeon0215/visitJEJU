@@ -1,7 +1,6 @@
 footer {
     width: 100%;
     position: relative;
-    overflow: hidden;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
     .family-site {
@@ -190,6 +189,32 @@ footer {
             }
         }
     }
+
+    #mini-top-btn {
+        position: absolute;
+        top: 230px;
+        right: 5%;
+        z-index: 2;
+        width: 80px;
+        height: 80px;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        >a {
+            color: #fff;
+
+            &::before {
+                display: block;
+                content: '∧';
+                text-align: center;
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1300px) {
@@ -333,6 +358,21 @@ footer {
                 width: 200px;
             }
         }
+
+        #mini-top-btn {
+            top: auto;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+
+            >a {
+                font-size: 14px;
+
+                &::before {
+                    font-size: 10px;
+                }
+            }
+        }
     }
 }
 
@@ -418,6 +458,24 @@ footer {
     
             .certification {
                 width: 150px;
+            }
+        }
+
+        #mini-top-btn {
+            overflow: visible;
+            top: -60px;
+            bottom: auto;
+            width: 40px;
+            height: 40px;
+            background-color: $mainColor;
+
+            >a {
+                font-size: 10px;
+
+                &::before {
+                    font-size: 8px;
+                    margin-bottom: 0;
+                }
             }
         }
     }
