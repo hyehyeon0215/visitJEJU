@@ -230,16 +230,13 @@ header .header-inner .header-icon > li:last-of-type {
 }
 @media (max-width: 768px) {
   header {
-    height: 80px;
+    height: 50px;
   }
   header .header-inner h1 {
     width: 100px;
   }
   header .header-inner .header-gnb {
     display: none;
-  }
-  header .header-inner .header-icon > li > a > i {
-    color: #ef6d00;
   }
   header .header-inner .header-icon > li:nth-of-type(1), header .header-inner .header-icon > li:nth-of-type(2) {
     display: none;

@@ -279,7 +279,7 @@ header {
 
 @media (max-width: $mobile) {
     header {
-        height: 80px;
+        height: 50px;
         .header-inner {
             h1 {
                 width: 100px;
@@ -290,12 +290,6 @@ header {
     
             .header-icon {
                 >li {
-
-                    >a {
-                        >i {
-                            color: $mainColor;
-                        }
-                    }
                     &:nth-of-type(1), &:nth-of-type(2) {
                         display: none;
                     }
