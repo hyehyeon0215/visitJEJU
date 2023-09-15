@@ -36,6 +36,8 @@ header {
   width: 100%;
   height: 100px;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 3;
   background-color: #f8f8f8;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.01);
@@ -419,11 +421,10 @@ footer .footer-content .certification > li > img {
 }
 
 #hotplace {
-  position: relative;
   width: 100%;
   height: 500px;
   overflow: hidden;
-  padding-top: 150px;
+  margin-top: 150px;
 }
 #hotplace .hotplace-inner {
   position: relative;
@@ -597,15 +598,15 @@ footer .footer-content .certification > li > img {
 @media (max-width: 1024px) {
   #hotplace {
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   #hotplace .hotplace-inner > h2 {
-    font-size: 26px;
+    font-size: 22px;
     margin-bottom: 20px;
   }
   #hotplace .hotplace-inner > h2::before {
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
   }
   #hotplace .hotplace-inner .hotplace-slide {
     height: 300px;
@@ -650,7 +651,7 @@ footer .footer-content .certification > li > img {
 }
 @media (max-width: 768px) {
   #hotplace {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
   #hotplace .hotplace-inner > h2 {
     font-size: 20px;
@@ -906,7 +907,6 @@ footer .footer-content .certification > li > img {
 }
 #sns .sns-inner > div.sns-instagram .insta-list {
   display: flex;
-  flex-wrap: wrap;
 }
 #sns .sns-inner > div.sns-instagram .insta-list > li {
   flex: 1;
@@ -934,6 +934,137 @@ footer .footer-content .certification > li > img {
   filter: grayscale(0);
 }
 
+@media (max-width: 1300px) {
+  #sns .sns-inner {
+    width: 90%;
+  }
+  #sns .sns-inner > div > h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  #sns {
+    padding: 0 0 100px;
+  }
+  #sns .sns-inner {
+    display: block;
+  }
+  #sns .sns-inner > div > h2 {
+    font-size: 22px;
+  }
+  #sns .sns-inner > div > h2::before {
+    width: 22px;
+    height: 22px;
+  }
+  #sns .sns-inner > div > ul {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  #sns .sns-inner > div.sns-youtube {
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 50px;
+  }
+  #sns .sns-inner > div.sns-instagram {
+    width: 100%;
+  }
+  #sns .sns-inner > div.sns-instagram > h2::before {
+    background: url(../img/logo/insta.svg) no-repeat center/cover;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li {
+    flex: 1;
+    height: 100%;
+    transition: flex 0.5s;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.9);
+    transition: 0.5s;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li:hover {
+    flex: 3;
+    border: 3px solid #ef6d00;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li:hover > a > img {
+    filter: grayscale(0);
+  }
+}
+@media (max-width: 768px) {
+  #sns {
+    padding: 0 0 50px;
+  }
+  #sns .sns-inner {
+    display: block;
+  }
+  #sns .sns-inner > div > h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  #sns .sns-inner > div > h2::before {
+    width: 20px;
+    height: 20px;
+  }
+  #sns .sns-inner > div > ul {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  #sns .sns-inner > div > a {
+    font-size: 12px;
+  }
+  #sns .sns-inner > div > a::after {
+    margin-left: 5px;
+  }
+  #sns .sns-inner > div.sns-youtube {
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+  #sns .sns-inner > div.sns-youtube .youtube-list {
+    display: flex;
+    gap: 10px;
+  }
+  #sns .sns-inner > div.sns-youtube .youtube-list > li {
+    border-radius: 15px;
+  }
+  #sns .sns-inner > div.sns-youtube .youtube-list > li > a {
+    height: 90px;
+  }
+  #sns .sns-inner > div.sns-youtube .youtube-list > li > p {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list {
+    gap: 5px;
+    height: 100px;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li {
+    flex: 1;
+    transition: none;
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li > a > img {
+    filter: grayscale(0);
+  }
+  #sns .sns-inner > div.sns-instagram .insta-list > li:hover {
+    flex: 1;
+    border: none;
+  }
+}
 #QnA {
   width: 100%;
   margin-bottom: 100px;
