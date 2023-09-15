@@ -200,7 +200,51 @@ header .header-inner .header-icon > li > .language.on {
   visibility: visible;
   opacity: 1;
 }
+header .header-inner .header-icon > li:last-of-type {
+  display: none;
+}
 
+@media (max-width: 1700px) {
+  header .header-inner .header-gnb > li {
+    width: 100px;
+  }
+  header .header-inner .header-gnb > li > a {
+    font-size: 18px;
+  }
+  header .header-inner .header-gnb > li > .header-sub {
+    width: 150px;
+  }
+}
+@media (max-width: 1300px) {
+  header .header-inner {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  header .header-inner .header-gnb {
+    display: none;
+  }
+  header .header-inner .header-icon > li:last-of-type {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 80px;
+  }
+  header .header-inner h1 {
+    width: 100px;
+  }
+  header .header-inner .header-gnb {
+    display: none;
+  }
+  header .header-inner .header-icon > li > a > i {
+    color: #ef6d00;
+  }
+  header .header-inner .header-icon > li:nth-of-type(1), header .header-inner .header-icon > li:nth-of-type(2) {
+    display: none;
+  }
+}
 footer {
   width: 100%;
   position: relative;

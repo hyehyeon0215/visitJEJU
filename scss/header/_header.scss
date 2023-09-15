@@ -221,6 +221,85 @@ header {
                         opacity: 1;
                     }
                 }
+
+                &:last-of-type {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1700px) {
+    header {    
+        .header-inner {
+            .header-gnb {
+                >li {
+                    width: 100px;
+    
+                    >a {
+                        font-size: 18px;
+                    }
+    
+                    >.header-sub {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    header {    
+        .header-inner {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        .header-inner {
+            .header-gnb {
+                display: none;
+            }
+    
+            .header-icon {
+                >li {
+                    &:last-of-type {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    header {
+        height: 80px;
+        .header-inner {
+            h1 {
+                width: 100px;
+            }
+            .header-gnb {
+                display: none;
+            }
+    
+            .header-icon {
+                >li {
+
+                    >a {
+                        >i {
+                            color: $mainColor;
+                        }
+                    }
+                    &:nth-of-type(1), &:nth-of-type(2) {
+                        display: none;
+                    }
+                }
             }
         }
     }
