@@ -191,3 +191,234 @@ footer {
         }
     }
 }
+
+@media (max-width: 1300px) {
+    footer {
+        .family-site {
+            >ul {
+                width: 90%;
+            }
+        }
+        .sitemap {
+            p {
+                width: 90%;
+                height: 40px;
+    
+                >a {
+                    line-height: 40px;
+                }
+            }
+    
+        }
+        .footer-content {
+            padding: 40px 5%;
+
+            .visitjeju-number {
+                >p {
+                    font-size: 30px;
+                    margin-bottom: 25px;
+
+                    &:first-of-type {
+                        font-size: 18px;
+                    }
+                }
+            }
+    
+            .footer-list {
+                gap: 10px;
+                margin-bottom: 15px;
+            }
+    
+            .footer-txt {
+                margin-bottom: 20px;
+                >li {
+                    >ul {
+                        gap: 10px;
+                    }
+                }
+            }
+    
+            .certification {
+                right: 5%;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    footer {
+        .family-site {
+            height: 50px;
+            >ul {
+                width: 100%;
+
+                >li {
+                    >img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .sitemap {
+            p {
+                width: 90%;
+                height: 30px;
+    
+                >a {
+                    line-height: 30px;
+                    font-size: 13px;
+                }
+            }
+
+            .sitemap-gnb {
+                padding: 0 5%;
+                >li {
+                    >a {
+                        font-size: 18px;
+                    }
+    
+                    > .sitemap-sub {
+                        >li {
+                            >a {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                padding: 0 0 30px;
+            }
+    
+        }
+        .footer-content {
+            padding: 30px 5%;
+
+            .visitjeju-number {
+                >p {
+                    font-size: 26px;
+                    margin-bottom: 18px;
+
+                    &:first-of-type {
+                        font-size: 20px;
+                    }
+                }
+            }
+    
+            .footer-list {
+                gap: 10px;
+                margin-bottom: 15px;
+
+                >li {
+                    >a {
+                        font-size: 13px;
+                    }
+                }
+            }
+    
+            .footer-txt {
+                margin-bottom: 20px;
+                >li {
+                    font-size: 13px;
+                }
+            }
+
+            .copyright {
+                font-size: 12px;
+            }
+    
+            .certification {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    footer {
+        .family-site {
+            height: 40px;
+        }
+        .sitemap {
+            p {
+                >a {
+                    font-size: 12px;
+                }
+            }
+
+            .sitemap-gnb {
+                padding: 0 5%;
+                gap: 15px;
+                justify-content: start;
+                text-align: left;
+                >li {
+                    >a {
+                        font-size: 14px;
+                    }
+    
+                    > .sitemap-sub {
+                        >li {
+                            >a {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                padding: 0 0 30px;
+            }
+    
+        }
+        .footer-content {
+            padding: 20px 5%;
+
+            .visitjeju-number {
+                >p {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+
+                    &:first-of-type {
+                        font-size: 14px;
+                    }
+                }
+            }
+    
+            .footer-list {
+                gap: 5px;
+                margin-bottom: 15px;
+                flex-wrap: wrap;
+
+                >li {
+                    >a {
+                        font-size: 10px;
+                    }
+                }
+            }
+    
+            .footer-txt {
+                margin-bottom: 15px;
+                >li {
+                    font-size: 10px;
+                    margin-bottom: 5px;
+
+                    >ul {
+                        flex-wrap: wrap;
+                        gap: 5px;
+                    }
+                }
+            }
+
+            .copyright {
+                font-size: 10px;
+            }
+    
+            .certification {
+                width: 150px;
+            }
+        }
+    }
+}
