@@ -1252,6 +1252,24 @@ footer #mini-top-btn > a::before {
     font-size: 14px;
   }
 }
+@media (max-width: 500px) {
+  #event .event-inner .event-slide {
+    width: 95%;
+    height: 300px;
+  }
+  #event .event-inner .event-slide > li > ul > li {
+    padding: 5px;
+  }
+  #event .event-inner .event-btns {
+    width: 100%;
+  }
+  #event .event-inner .event-btns li {
+    margin-top: 30px;
+  }
+  #event .event-inner .event-btns li t a i {
+    font-size: 14px;
+  }
+}
 #sns {
   width: 100%;
   padding: 50px 0 100px;
@@ -1464,9 +1482,6 @@ footer #mini-top-btn > a::before {
     height: 120px;
     margin-bottom: 10px;
   }
-  #sns .sns-inner > div > a {
-    font-size: 12px;
-  }
   #sns .sns-inner > div > a::after {
     margin-left: 5px;
   }
@@ -1508,6 +1523,9 @@ footer #mini-top-btn > a::before {
   }
 }
 @media (max-width: 500px) {
+  #sns .sns-inner > div > a {
+    font-size: 10px;
+  }
   #sns .sns-inner > div.sns-youtube .youtube-list {
     height: 90px;
     display: flex;

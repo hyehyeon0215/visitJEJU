@@ -298,3 +298,39 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    #event {
+        .event-inner {
+
+            .event-slide {
+                width: 95%;
+                height: 300px;
+    
+                >li {
+    
+                    >ul {
+                        >li {
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+
+    
+            .event-btns {
+                width: 100%;
+                
+                li {
+                    margin-top: 30px;
+                    t
+                    a {
+                        i {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

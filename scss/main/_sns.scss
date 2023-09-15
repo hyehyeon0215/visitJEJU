@@ -268,7 +268,6 @@
                 }
 
                 >a {
-                    font-size: 12px;
     
                     &::after {
                         margin-left: 5px;
@@ -335,6 +334,10 @@
     #sns {
         .sns-inner {
             >div {
+
+                >a {
+                    font-size: 10px;
+                }
                 
                 &.sns-youtube {
                     .youtube-list {
