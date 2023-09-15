@@ -32,6 +32,11 @@ a {
   align-items: center;
 }
 
+@media (max-width: 1300px) {
+  #top-btn {
+    display: none;
+  }
+}
 header {
   width: 100%;
   height: 100px;

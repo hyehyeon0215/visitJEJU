@@ -25,3 +25,9 @@ $mobile: 768px;
         align-items: center;
     }
 }
+
+@media (max-width: 1300px) {
+    #top-btn {
+        display: none;
+    }
+}
