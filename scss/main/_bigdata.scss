@@ -218,8 +218,13 @@
                     width: 45%;
                     height: 48%;
                     background-color: $mainColor;
+
                     >a {
                         font-size: 12px;
+                    }
+
+                    &:hover {
+                        flex: auto;
                     }
                 }
             }

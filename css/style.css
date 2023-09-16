@@ -2328,6 +2328,9 @@ footer #mini-top-btn > a::before {
   #bigdata .bigdata-inner .bigdata-nav > li > a {
     font-size: 12px;
   }
+  #bigdata .bigdata-inner .bigdata-nav > li:hover {
+    flex: auto;
+  }
 }
 #sub-qna {
   min-height: 60vh;
