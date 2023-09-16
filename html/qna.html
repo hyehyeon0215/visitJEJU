@@ -156,6 +156,26 @@
         </div>
     </section>
     <section id="sub-qna">
+        <aside class="comment-input">
+            <div class="input-box">
+                <p><span>답변을 남겨 주세요!</span><a href="#" class="post-close"><i class="fa-solid fa-x"></i></a></p>
+                <div class="comment-top">
+                    <label for="comment-title">제목</label>
+                    <input type="text" name="comment-title" id="comment-title">
+                </div>
+                <div class="comment-middle">
+                    <label for="comment-detail">내용</label>      
+                    <textarea name="comment-detail" id="comment-detail" cols="30" rows="5" placeholder="내용은 20자 이상 입력해 주세요."></textarea>
+                </div>
+                <div class="comment-bottom">
+                    <label for="comment-tag">태그</label>
+                    <input type="text" name="comment-tag" id="comment-tag">
+                </div>
+                <div class="comment-submit">
+                    <button class="submit-btn">등록하기</button>
+                </div>
+            </div>
+        </aside>
         <div class="sub-qna-inner">
             <div class="search-box">
                 <select name="qna-select" id="qna-select">
@@ -185,10 +205,9 @@
                         <tr>
                             <td colspan="4" class="post post1">
                                 <div class="post-box">
-                                    <i class="fa-solid fa-x"></i>
+                                    <a href="#" class="post-close"><i class="fa-solid fa-x"></i></a>
                                     <p>한라산을 가려고 하는데 예약을 꼭 해야 하는지 궁금합니다.</p>
-                                </div>
-                                <div class="post-comment-input">
+                                    <a href=""></a>
                                 </div>
                                 <div class="post-comment-list">
                                     <ul>
