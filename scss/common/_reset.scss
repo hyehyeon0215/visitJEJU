@@ -1,6 +1,7 @@
 * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Jeju Gothic', sans-serif;}
 ol, ul, li {list-style: none;}
 a {text-decoration: none;}
+.hidden {position: absolute; top: -999999px; opacity: 0;}
 
 
 $mainColor: #ef6d00;

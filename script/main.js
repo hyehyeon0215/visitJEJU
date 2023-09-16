@@ -117,19 +117,6 @@ for (let i = 0; i < maxSlide; i++) {
 }
 
 
-// s
-
-// slideBtns.addEventListener("mouseover", () => {
-//     clearInterval(loopInterval);
-// });
-  
-// slideBtns.addEventListener("mouseout", () => {
-//     loopInterval = setInterval(() => {
-//       nextMove();
-//     }, 5000);
-// });
-
-
 let startPoint = 0;
 let endPoint = 0;
 
