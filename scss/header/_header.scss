@@ -91,6 +91,10 @@ header {
                                     align-items: center;
                                     font-size: 16px;
                                     color: #333;
+
+                                    &.subPage {
+                                        color: $mainColor;
+                                    }
                                 }
                             }
                         }
@@ -246,6 +250,10 @@ header {
                                 background-color: $mainColor;
                                 opacity: .2;
                                 bottom: 0;
+                            }
+
+                            &.subPage {
+                                color: $mainColor;
                             }
                         }
 

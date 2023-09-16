@@ -80,6 +80,10 @@ footer {
                             font-size: 16px;
                             color: #999;
                             margin-bottom: 10px;
+
+                            &.subPage {
+                                color: $mainColor;
+                            }
                         }
                     }
                 }
@@ -390,18 +394,21 @@ footer {
 
             .sitemap-gnb {
                 padding: 0 5%;
-                gap: 15px;
+                gap: 5px;
                 justify-content: start;
                 text-align: left;
                 >li {
                     >a {
-                        font-size: 14px;
+                        padding: 0;
+                        margin-bottom: 10px;
+                        font-size: 12px;
                     }
     
                     > .sitemap-sub {
                         >li {
+                            font-size: 10px;
                             >a {
-                                font-size: 12px;
+                                font-size: 10px;
                             }
                         }
                     }
