@@ -195,6 +195,7 @@ footer {
     }
 
     #mini-top-btn {
+        display: none;
         position: absolute;
         top: 230px;
         right: 5%;
@@ -202,7 +203,6 @@ footer {
         width: 80px;
         height: 80px;
         background-color: #333;
-        display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
@@ -271,6 +271,10 @@ footer {
                 right: 5%;
                 width: 300px;
             }
+        }
+
+        #mini-top-btn {
+            display: flex;
         }
     }
 }

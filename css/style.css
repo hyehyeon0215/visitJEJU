@@ -553,6 +553,7 @@ footer .footer-content .certification > li > img {
   object-fit: cover;
 }
 footer #mini-top-btn {
+  display: none;
   position: absolute;
   top: 230px;
   right: 5%;
@@ -560,7 +561,6 @@ footer #mini-top-btn {
   width: 80px;
   height: 80px;
   background-color: #333;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -610,6 +610,9 @@ footer #mini-top-btn > a::before {
   footer .footer-content .certification {
     right: 5%;
     width: 300px;
+  }
+  footer #mini-top-btn {
+    display: flex;
   }
 }
 @media (max-width: 1024px) {
