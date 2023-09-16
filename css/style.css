@@ -1275,12 +1275,19 @@ footer #mini-top-btn > a::before {
     padding: 5px;
   }
   #event .event-inner .event-btns {
-    width: 100%;
+    width: 105%;
   }
   #event .event-inner .event-btns li {
     margin-top: 30px;
   }
-  #event .event-inner .event-btns li t a i {
+  #event .event-inner .event-btns li a {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  #event .event-inner .event-btns li a i {
     font-size: 14px;
   }
 }
