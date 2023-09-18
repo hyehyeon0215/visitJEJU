@@ -2441,8 +2441,8 @@ footer #mini-top-btn > a::before {
 #sub-qna .sub-qna-inner .qna-table table tr td {
   padding: 15px;
   text-align: center;
-  border: 1px solid #f8f8f8;
-  background-color: #fff;
+  border-bottom: 1px solid rgba(239, 109, 0, 0.2);
+  background-color: #f9f9f9;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2455,7 +2455,7 @@ footer #mini-top-btn > a::before {
   font-size: 18px;
 }
 #sub-qna .sub-qna-inner .qna-table table tr:hover > td {
-  background-color: #f7f7f7;
+  background-color: #eee;
 }
 #sub-qna .sub-qna-inner .qna-table table tr:last-of-type > td {
   background-color: #ef6d00;
