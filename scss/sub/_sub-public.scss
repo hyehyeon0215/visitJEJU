@@ -189,3 +189,78 @@
         }
     }
 }
+
+@media (max-width: $mobile) {
+    #sub-public {
+        padding: 30px 0 60px;
+        .sub-public-inner {    
+            >ul {
+    
+                >li {
+                    width: 100%;
+                    height: 300px;
+
+                    >ul {
+                        flex-direction: column;
+
+                        .public-title {
+                            width: 100%;
+                            left: 50%;
+                            top: 35px;
+                            z-index: 3;
+                            transform: translateX(-50%);
+
+                            h3 {
+                                background-color: rgba($color: #000000, $alpha: .5);
+                            }
+                        }
+
+                        .public-img {
+                            width: 100%;
+                            height: 25%;
+                        }
+
+                        .public-txt {
+                            height: 75%;
+                            padding: 10px;
+                            border-radius: 0;
+                            display: flex;
+                            align-items: center;
+
+                            >ul {
+                                >li {
+                                    >span {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+
+                    &:hover {
+                        >ul {
+                            .public-txt {
+                                height: 70%;
+                                padding: 10px;
+                                border-radius: 0;
+                                display: flex;
+                                align-items: center;
+    
+                                >ul {
+                                    >li {
+                                        >span {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+
+                }
+            }
+        }
+    }
+}
