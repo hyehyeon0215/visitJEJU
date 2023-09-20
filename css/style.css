@@ -2914,7 +2914,7 @@ footer #mini-top-btn > a::before {
     width: 100%;
     left: 50%;
     top: 35px;
-    z-index: 3;
+    z-index: 2;
     transform: translateX(-50%);
   }
   #sub-public .sub-public-inner > ul > li > ul .public-title h3 {
